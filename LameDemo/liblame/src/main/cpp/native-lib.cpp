@@ -82,7 +82,7 @@ Java_com_north_light_liblame_LameUtils_convertToMp3(JNIEnv *env, jobject obj, js
     //1.初始化lame的编码器
     lame_t lame = lame_init();
     //2. 设置lame mp3编码的采样率
-    lame_set_in_samplerate(lame, 8000);
+    lame_set_in_samplerate(lame, 44100);
     lame_set_num_channels(lame, 2);
     // 3. 设置MP3的编码方式
     lame_set_VBR(lame, vbr_default);
